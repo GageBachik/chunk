@@ -10,6 +10,6 @@ var chunk = function(array, chunks){
 		console.log(output);
 	}
 };
-
+// should return [ [1,2,3,4,5], [6,7,8,9,10] ]
 var input = [1,2,3,4,5,6,7,8,9,10];
-chunk(input, 2) // should return [ [1,2,3,4,5], [6,7,8,9,10] ]
+chunk(input, 2)
