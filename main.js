@@ -1,11 +1,10 @@
 var chunk = function(array, chunks){
 	var count = 0;
-	var remainder = array.length % chunks;
 	var output = [];
+	var remainder = array.length % chunks;
 	var spliceAmount = Math.floor(array.length / chunks);
 	for (var i = 0; i < chunks; i++) {
 		if ( count < remainder) {
-			console.log('pushed');
 			output.push(array.splice(0,spliceAmount+1));
 			count++
 		}else{
